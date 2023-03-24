@@ -13,7 +13,7 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=client.invitelink3),
             ],
             [
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
             ],
         ]
         return buttons
@@ -23,7 +23,7 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
             ],
         ]
         return buttons
@@ -33,7 +33,7 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=client.invitelink),
             ],
             [
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
             ],
         ]
         return buttons
@@ -43,7 +43,7 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=client.invitelink3),
             ],
             [
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
             ],
         ]
         return buttons
@@ -56,7 +56,7 @@ def start_button(client):
             [
                 InlineKeyboardButton(text="• ᴄʜᴀɴɴᴇʟ •", url=client.invitelink3),
             ],
-            [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close")],
+            [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close")],
         ]
         return buttons
 
@@ -72,7 +72,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="• ᴄᴏʙᴀ ʟᴀɢɪ •",
+                        text="• Try again ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -90,7 +90,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="• ᴄᴏʙᴀ ʟᴀɢɪ •",
+                        text="• Try again ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -108,7 +108,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="• ᴄᴏʙᴀ ʟᴀɢɪ •",
+                        text="• Try again ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
@@ -130,7 +130,7 @@ def fsub_button(client, message):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text="• ᴄᴏʙᴀ ʟᴀɢɪ •",
+                        text="• Try again ♻️",
                         url=f"https://t.me/{client.username}?start={message.command[1]}",
                     )
                 ]
