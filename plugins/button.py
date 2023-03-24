@@ -6,11 +6,11 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and not FORCE_SUB_CHANNEL2 and not FORCE_SUB_GROUP:
         buttons = [
             [
-                InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink),
-                InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink2),
+                InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink),
+                InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink3),
+                InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink3),
             ],
             [
                 InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close"),
