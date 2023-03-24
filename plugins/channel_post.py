@@ -38,7 +38,7 @@ from helper_func import encode
     )
 )
 async def channel_post(client: Client, message: Message):
-    reply_text = await message.reply_text("<code>Tunggu Sebentar...</code>", quote=True)
+    reply_text = await message.reply_text("<code>Wait a minute...</code>", quote=True)
     try:
         post_message = await message.copy(
             chat_id=client.db_channel.id, disable_notification=True
@@ -50,7 +50,7 @@ async def channel_post(client: Client, message: Message):
         )
     except Exception as e:
         LOGGER(__name__).warning(e)
-        await reply_text.edit_text("<b>Telah Terjadi Error...</b>")
+        await reply_text.edit_text("<b>An error has occurred ...</b>")
         return
     converted_id = post_message.message_id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
@@ -68,7 +68,7 @@ async def channel_post(client: Client, message: Message):
     )
 
     await reply_text.edit(
-        f"<b>Link Sharing File Berhasil Di Buat :</b>\n\n{link}",
+        f"<b>Link Sharing File:</b>\n\n{link}",
         reply_markup=reply_markup,
         disable_web_page_preview=True,
     )
