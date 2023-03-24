@@ -186,25 +186,24 @@ async def send_text(client: Bot, message: Message):
         pls_wait = await message.reply(
             "<code>Broadcasting Message Tunggu Sebentar...</code>"
         )
-        for row in query:
-            chat_id = int(row[0])
-            if chat_id not in ADMINS:
-                try:
-                    await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
-                    successful += 1
-                except FloodWait as e:
-                    await asyncio.sleep(e.x)
-                    await broadcast_msg.copy(chat_id, protect_content=PROTECT_CONTENT)
-                    successful += 1
-                except UserIsBlocked:
-                    await del_user(chat_id)
-                    blocked += 1
-                except InputUserDeactivated:
-                    await del_user(chat_id)
-                    deleted += 1
-                except BaseException:
-                    unsuccessful += 1
-                total += 1
+        for chat_id in query:
+            try:
+                await broadcast_msg.copy(chat_id)
+                successful += 1
+            except FloodWait as e:
+                await asyncio.sleep(e.x)
+                await broadcast_msg.copy(chat_id)
+                successful += 1
+            except UserIsBlocked:
+                await del_user(chat_id)
+                blocked += 1
+            except InputUserDeactivated:
+                await del_user(chat_id)
+                deleted += 1
+            except:
+                unsuccessful += 1
+                pass
+            total += 1
         status = f"""<b><u>Berhasil Broadcast</u>
 Jumlah Pengguna: <code>{total}</code>
 Berhasil: <code>{successful}</code>
