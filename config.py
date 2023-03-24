@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
+    "<b>ʜᴇʟʟᴏ {first}</b>\n\n<b>ɪ ᴄᴀɴ sᴀᴠᴇ ᴀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ ᴏɴ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.</b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1458235021").split())]
