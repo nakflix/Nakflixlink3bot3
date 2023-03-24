@@ -204,16 +204,16 @@ async def send_text(client: Bot, message: Message):
                 unsuccessful += 1
                 pass
             total += 1
-        status = f"""<b><u>Berhasil Broadcast</u>
-Jumlah Pengguna: <code>{total}</code>
-Berhasil: <code>{successful}</code>
-Gagal: <code>{unsuccessful}</code>
-Pengguna diblokir: <code>{blocked}</code>
-Akun Terhapus: <code>{deleted}</code></b>"""
+        status = f"""<b><u>Succeed Broadcast</u>
+Number of users: <code>{total}</code>
+Succeed: <code>{successful}</code>
+Fail: <code>{unsuccessful}</code>
+Blocked users: <code>{blocked}</code>
+Deleted account: <code>{deleted}</code></b>"""
         return await pls_wait.edit(status)
     else:
         msg = await message.reply(
-            "<code>Gunakan Perintah ini Harus Sambil Reply ke pesan telegram yang ingin di Broadcast.</code>"
+            "<code>Use this command  while replying to the telegram message you want to broadcast.</code>"
         )
         await asyncio.sleep(8)
         await msg.delete()
