@@ -244,3 +244,10 @@ async def get_uptime(client, m: Message):
         f"• <b>Uptime:</b> <code>{uptime}</code>\n"
         f"• <b>Start Time:</b> <code>{START_TIME_ISO}</code>"
     )
+
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+
+@Bot.on_message(filters.private & filters.incoming)
+async def useless(_,message: Message):
+    if USER_REPLY_TEXT:
+        await message.reply(USER_REPLY_TEXT)
