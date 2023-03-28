@@ -245,7 +245,7 @@ async def get_uptime(client, m: Message):
         f"• <b>Start Time:</b> <code>{START_TIME_ISO}</code>"
     )
 
-USER_REPLY_TEXT = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://github.com/CodeXBotz/File-Sharing-Bot'>Click here</a>\n○ Channel : @NAKFLIXTV\n○ Support Group : @NAKFLIXPLUS</b>",= f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Source Code : <a href='https://github.com/CodeXBotz/File-Sharing-Bot'>Click here</a>\n○ Channel : @NAKFLIXTV\n○ Support Group : @NAKFLIXPLUS</b>",
+USER_REPLY_TEXT = "U need to unlock the channels & group first. Don't send me messages  I'm only File Share bot! Powered by @NAKFLIXTV"
 
 @Bot.on_message(filters.private & filters.incoming)
 async def useless(_,message: Message):
