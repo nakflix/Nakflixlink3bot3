@@ -23,7 +23,7 @@ API_HASH = os.environ.get("API_HASH", "28df6d84da76d8606bf5f0e71ecfb62c")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001755253960"))
 
 # Protect Content
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>ʜᴇʟʟᴏ {first}</b>\n\n<b>ɪ ᴄᴀɴ sᴀᴠᴇ ᴀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ ᴏɴ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.</b>",
+    "<b>ʜᴇʟʟᴏ {first}</b>\n\n<b>ɪ ᴄᴀɴ sᴀᴠᴇ ᴀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ ᴏɴ @NAKFLIXTV ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.</b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1458235021").split())]
