@@ -7,7 +7,7 @@ def start_button(client):
         buttons = [
             [
                 InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink),
-                InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink2),
+                InlineKeyboardButton(text="🔒 ɢʀᴏᴜᴘ 🔒", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="🔒 ᴄʜᴀɴɴᴇʟ 🔒", url=client.invitelink3),
@@ -51,7 +51,7 @@ def start_button(client):
         buttons = [
             [
                 InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink),
-                InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink2),
+                InlineKeyboardButton(text="🔓 ɢʀᴏᴜᴘ 🔓", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="🔓 ᴄʜᴀɴɴᴇʟ 🔓", url=client.invitelink3),
@@ -120,7 +120,7 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="🔐 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔐", url=client.invitelink),
-                InlineKeyboardButton(text="🔐 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔐", url=client.invitelink2),
+                InlineKeyboardButton(text="🔐 ɢʀᴏᴜᴘ 🔐", url=client.invitelink2),
             ],
             [
                 InlineKeyboardButton(text="🔐 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 🔐", url=client.invitelink3),
