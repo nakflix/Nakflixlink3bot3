@@ -26,8 +26,8 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001755253960"))
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Heroku Credentials for updater.
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "netsharingbot")
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "cfba460e-bb14-4a3f-9607-b21bddb83438")
 
 # Custom Repo for updater.
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
