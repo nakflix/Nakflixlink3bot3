@@ -1,0 +1,76 @@
+{
+  "name": "File Sharing",
+  "description": "BOT Multi Force Subs File Sharing Bot berguna untuk menyimpan file dan dapat diakses melalui link khusus",
+  "stack": "heroku-22",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Masukan Bot token, Dapatkan dari t.me/BotFather",
+      "value": "5928242691:AAG20OcsZ1ZHcr8ZRz5fd8e8NND2jppeNIs"
+    },
+    "ADMINS": {
+      "description": "Masukan User ID untuk mendapatkan hak Admin di BOT [ Gunakan Spasi Untuk Pemisah User ID ]",
+      "value": "1458235021"
+    },
+    "APP_ID": {
+      "description": "Dapatkan APP ID di web my.telegram.org",
+      "value": "14298205"
+    },
+    "API_HASH": {
+      "description": "Dapatkan API HASH di web my.telegram.org",
+      "value": "28df6d84da76d8606bf5f0e71ecfb62c"
+    },
+    "CHANNEL_ID": {
+      "description": "Masukan ID Channel Untuk [Channel Database]",
+      "value": "-1001755253960"
+    },
+    "PROTECT_CONTENT": {
+      "description": "Untuk Mencegah pengguna bot untuk mendownload/memforward/mengscreenshot konten yang dikirim di bot [ Bila ingin diaktifkan ubah ke True ]",
+      "value": "False"
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "Masukan ID dari Channel Atau Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "-1001861505272"
+    },
+    "FORCE_SUB_CHANNEL2": {
+      "description": "Masukan ID dari Channel Atau Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "-1001909894765"
+    },
+    "FORCE_SUB_GROUP": {
+      "description": "Masukan ID dari Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "-1001585995212"
+     },
+    "DATABASE_URL": {
+      "description": "Paste your mongo db url",
+      "value": "mongodb+srv://Alphanakflix:alpha3720@cluster0.a9seax6.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "DATABASE_NAME":{
+      "description": "Enter your DATABASE_NAME ",
+      "value": "cluster0"
+    },
+    "START_MESSAGE": {
+      "description": "Pesan /start memulai awalan ke bot, Gunakan format parsemode HTML",
+      "value": "<b>ʜᴇʟʟᴏ {first}</b>\n\n<b>ɪ ᴄᴀɴ sᴀᴠᴇ ᴀ ᴘᴇʀsᴏɴᴀʟ ғɪʟᴇ ᴏɴ @NAKFLIXTV ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.</b>"
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML",
+      "value": "<b>ʜᴇʟʟᴏ {first}\n\nʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟs & ɢʀᴏᴜᴘ ғɪʀsᴛ ᴛᴏ sᴇᴇ ᴛʜᴇ ʜɪᴅᴅᴇɴ ғɪʟᴇ\n\nᴋɪɴᴅʟʏ 👇ᴊᴏɪɴ ᴛʜᴇ ᴄʜᴀɴɴᴇʟs & ɢʀᴏᴜᴘ ғɪʀsᴛ👇</b>"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
