@@ -26,7 +26,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001755253960"))
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Heroku Credentials for updater.
-HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "netsharingbot")
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "netflixlink1bot")
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "cf493a35-2310-4162-a292-06afc8ef315e")
 
 # Custom Repo for updater.
